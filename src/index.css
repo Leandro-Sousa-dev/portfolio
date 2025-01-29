@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    @font-face {
+        font-family: 'Lexend';
+        font-weight: 400;
+        src: url('/fonts/lexendDeca/LexendDeca-VariableFont_wght.ttf'), format('ttf');
+    }
+}
