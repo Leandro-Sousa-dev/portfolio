@@ -45,10 +45,13 @@ export const ProjetcCard = (props) => {
                             <GoFileDirectoryFill className="ml-2 h-5 w-5" />
                         </ButtonFB>
                         : ''}
-                    <ButtonFB color='darkBlue' href={props.linkPage}>
-                        Page
-                        < HiMiniPaperAirplane className="ml-2 h-5 w-5" />
-                    </ButtonFB>
+                    {props.linkPage !== '' ?
+                        <ButtonFB color='darkBlue' href={props.linkPage}>
+                            Page
+                            < HiMiniPaperAirplane className="ml-2 h-5 w-5" />
+                        </ButtonFB>
+                        : ''}
+
                 </div>
 
             </Card >
