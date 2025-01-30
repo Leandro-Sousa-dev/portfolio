@@ -19,6 +19,16 @@ export const NavbarFB = () => {
     }
   }
 
+  const handleClick = (event, to) => {
+
+    event.preventDefault();
+    const targetElement = document.querySelector(to);
+    if (targetElement) {
+      targetElement.scrollIntoView({
+        behavior: "smooth",
+      });
+    }
+  }
   return (
     <Navbar fluid className="w-full fixed z-40" theme={myTheme}>
       <Navbar.Brand as={'a'} href="https://www.linkedin.com/in/jos%C3%A9-leandro-7ba007261/" target="_blank">
@@ -27,10 +37,10 @@ export const NavbarFB = () => {
       </Navbar.Brand>
       <Navbar.Toggle />
       <Navbar.Collapse>
-        <Navbar.Link active={activeLink === "home"} href="#home">Início</Navbar.Link>
-        <Navbar.Link active={activeLink === "about"} href="#about">Sobre</Navbar.Link>
-        <Navbar.Link active={activeLink === "projects"} href="#projects">Projetos</Navbar.Link>
-        <Navbar.Link active={activeLink === "skills"} href="#skills">Habilidades</Navbar.Link>
+        <Navbar.Link active={activeLink === "home"} href="#home" onClick={(e) => { handleClick(e, '#home') }}>Início</Navbar.Link>
+        <Navbar.Link active={activeLink === "about"} href="#about" onClick={(e) => { handleClick(e, '#about') }}>Sobre</Navbar.Link>
+        <Navbar.Link active={activeLink === "projects"} href="#projects" onClick={(e) => { handleClick(e, '#projects') }}>Projetos</Navbar.Link>
+        <Navbar.Link active={activeLink === "skills"} href="#skills" onClick={(e) => { handleClick(e, '#skills') }} >Habilidades</Navbar.Link>
       </Navbar.Collapse>
     </Navbar>
   );

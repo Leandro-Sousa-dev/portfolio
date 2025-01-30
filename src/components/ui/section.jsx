@@ -1,7 +1,6 @@
 import { useInView } from "react-intersection-observer";
 import { useNavHandler } from "../../hooks/useNavHandler";
 import { useEffect } from "react";
-import { updateHistory } from "../ux/updateHistory";
 
 export const Section = (props) => {
     const { activeLink, handleNav } = useNavHandler()
@@ -13,9 +12,7 @@ export const Section = (props) => {
     );
     useEffect(() => {
         if (inView && activeLink !== props.id) {
-            handleNav(props.id);
-            updateHistory(inView, `#${props.id}`)
-            
+            handleNav(props.id);            
         }
     }, [inView])
 
