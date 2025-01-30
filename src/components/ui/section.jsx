@@ -7,14 +7,15 @@ export const Section = (props) => {
     const { activeLink, handleNav } = useNavHandler()
     const { ref, inView } = useInView(
         {
-            threshold: 0.6,
-            delay: 500
+            threshold: 0.1,
+            delay: 400
         }
     );
     useEffect(() => {
         if (inView && activeLink !== props.id) {
             handleNav(props.id);
             updateHistory(inView, `#${props.id}`)
+            
         }
     }, [inView])
 

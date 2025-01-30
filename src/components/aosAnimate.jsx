@@ -7,6 +7,7 @@ export const AosAnimate = ({children})=> {
     
   useEffect(() => {
     AOS.init();
+    
   }, []);
 
   return <>{children}</>;

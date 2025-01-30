@@ -18,11 +18,11 @@ export const ProjetcCard = (props) => {
 
             >
 
-                <h5 className="text-2xl font-bold tracking-wide text-gray-900 dark:text-white light:text-black">
+                <h5 className="text-2xl font-bold text-center tracking-wide text-gray-900 dark:text-white light:text-black">
                     {props.tittle}
                 </h5>
                 <div className="flex flex-col grow">
-                    <p className="grow text-gray-700 dark:text-gray-100 light:text-gray-800" >
+                    <p className="grow text-gray-700 text-center dark:text-gray-100 light:text-gray-800" >
                         {props.description}
                     </p>
                     <div className="flex flex-wrap justify-center gap-5 p-5">

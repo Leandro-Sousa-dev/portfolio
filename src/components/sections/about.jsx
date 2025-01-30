@@ -29,7 +29,7 @@ export const SectionAbout = () => {
                         </div>
                     </div>
                     <div className="flex flex-col gap-10">
-                        <Blockquote className="text-xs max-w-[900px] font-light tracking-wide sm:text-base sm:leading-7 not-italic bg-gray-100 dark:bg-[rgba(0,0,0,0.4)] p-4 rounded-lg">
+                        <Blockquote className="text-sm max-w-[900px] font-light tracking-wide sm:text-base sm:leading-7 not-italic bg-gray-100 dark:bg-[rgba(0,0,0,0.4)] p-4 rounded-lg">
                             Descobri na programação uma forma de canalizar minha paixão por desafios e evolução contínua. Meu objetivo é sempre enfrentar os obstáculos da melhor maneira possível, aprendendo e melhorando ao longo do caminho. Valorizo a colaboração, estando presente em reuniões, contribuindo com críticas construtivas e opiniões sinceras. Há pouco mais de um ano, tive minha primeira oportunidade como desenvolvedor Frontend. Essa experiência me despertou o interesse em expandir minhas habilidades para o Backend, buscando ir além da interface do usuário e me capacitar a desenvolver aplicações Web de forma completa e integrada.
                         </Blockquote>
                         <div className="flex gap-10 flex-col items-center sm:flex-row sm:justify-center">

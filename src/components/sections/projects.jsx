@@ -16,6 +16,9 @@ import {
     SiPwa,
     SiCss3,
     SiTailwindcss,
+    SiDocker,
+    SiPrisma,
+    SiExpress,
 } from "react-icons/si"
 
 export const SectionProjects = () => {
@@ -26,6 +29,25 @@ export const SectionProjects = () => {
 
                 <AosAnimate>
                     <div className="h-full" data-aos="fade-right" data-aos-easing="ease-in-out" data-aos-anchor-placement="top">
+                        <ProjetcCard
+                            imgSrc='/images/ecommerce.jpeg'
+                            imgAlt='Ecommerce DevQuest'
+                            tittle='Ecommerce DevQuest'
+                            linkRepo='https://github.com/Leandro-Sousa-dev/ecommerce-ts'
+                            linkPage=''
+                            description='Aplicação em desenvolvimento que irá contar com uma estrutura completa de ponta a ponta, com o Front-end e o back-end feito por min com a revisão e apoio dos mentores do DevQuest.'>
+                            <SiReact />
+                            <SiTypescript />
+                            <SiVite />
+                            <SiReactrouter />
+                            <SiStyledcomponents />
+                            <SiDocker />
+                            <SiPrisma />
+                            <SiExpress />
+                        </ProjetcCard>
+                    </div>
+
+                    <div className="h-full" data-aos="fade-left" data-aos-easing="ease-in-out" data-aos-anchor-placement="top">
                         <ProjetcCard
                             imgSrc='/images/qesm.jpeg'
                             imgAlt='Quixeré em suas mãos'
@@ -43,7 +65,7 @@ export const SectionProjects = () => {
                         </ProjetcCard>
                     </div>
 
-                    <div className="h-full" data-aos="fade-left" data-aos-easing="ease-in-out" data-aos-anchor-placement="top">
+                    <div className="h-full" data-aos="fade-right" data-aos-easing="ease-in-out" data-aos-anchor-placement="top">
                         <ProjetcCard
                             imgSrc='/images/pokedex-ts.jpeg'
                             imgAlt='Projeto Pokedex TypeScript'
@@ -61,11 +83,11 @@ export const SectionProjects = () => {
                         </ProjetcCard>
                     </div>
 
-                    <div className="h-full" data-aos="fade-right" data-aos-easing="ease-in-out" data-aos-anchor-placement="top">
+                    <div className="h-full" data-aos="fade-left" data-aos-easing="ease-in-out" data-aos-anchor-placement="top">
                         <ProjetcCard
                             imgSrc='/images/portfolio-leandro.jpeg'
                             imgAlt='Portfolio Leandro'
-                            tittle='Meu Portfolio'
+                            tittle='Meu Portfólio'
                             linkRepo='https://github.com/Leandro-Sousa-dev/portfolio'
                             linkPage=''
                             description='Neste projeto, apliquei todo o meu conhecimento em design de interfaces para criar uma experiência amigável e intuitiva. Além disso, aproveitei a oportunidade para aprender novas ferramentas e tecnologias, como Tailwind CSS, TsParticles, React Intersection Observer e AOS animation.'>
