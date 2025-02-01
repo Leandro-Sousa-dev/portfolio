@@ -34,7 +34,7 @@ export const SectionProjects = () => {
                             tittle='Ecommerce DevQuest'
                             linkRepo='https://github.com/Leandro-Sousa-dev/ecommerce-ts'
                             linkPage='https://ecommerce-ts-eight.vercel.app/'
-                            description='Aplicação em desenvolvimento que irá contar com uma estrutura completa de ponta a ponta, com o Front-end e o back-end feito por min com a revisão e apoio dos mentores do DevQuest.'>
+                            description='Aplicação em desenvolvimento que irá contar com uma estrutura completa de ponta a ponta, com o Front-end e o back-end feito por mim com a revisão e apoio dos mentores do DevQuest.'>
                             <SiReact />
                             <SiTypescript />
                             <SiVite />
