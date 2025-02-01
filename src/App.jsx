@@ -9,7 +9,7 @@ import { NavHProvider } from "./contexts/navContext";
 import { useEffect } from "react";
 
 const App = () => {
-  const { mode, setMode } = useThemeMode()
+  const { setMode } = useThemeMode()
   useEffect(() => {
     setMode('auto')
 

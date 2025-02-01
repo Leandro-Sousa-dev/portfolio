@@ -40,7 +40,7 @@ export const SectionSkills = () => {
                         <h3>Habilidades</h3>
                     </div>
 
-                    <div className="flex flex-col lg:flex-row justify-center gap-10">
+                    <div className="flex flex-col justify-center gap-10 lg:flex-row">
                         <div data-aos="fade-up-left">
                             <SkillCard >
                                 <SiReact title="React" />

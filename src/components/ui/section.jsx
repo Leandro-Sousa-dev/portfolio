@@ -18,7 +18,7 @@ export const Section = (props) => {
 
 
     return (
-        <section ref={ref} id={props.id} className="overflow-x-hidden min-h-dvh dark:text-white pt-20 p-10 md:p-20">
+        <section ref={ref} id={props.id} className="min-h-dvh overflow-x-hidden p-10 pt-20 dark:text-white md:p-20">
             {props.children}
         </section>
     )

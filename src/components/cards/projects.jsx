@@ -5,24 +5,24 @@ import { GoFileDirectoryFill } from "react-icons/go";
 
 export const ProjetcCard = (props) => {
     return (
-        <div className="flex justify-center h-full">
+        <div className="flex h-full justify-center">
             <Card
                 theme={{
                     "root": {
                         "children": "flex h-full flex-col justify-between gap-4 p-6",
                     }
                 }}
-                className=" h-full max-w-xl light:bg-gray-100 dark:bg-[rgba(0,0,0,0.4)] border-0 justify-between"
+                className=" light:bg-gray-100 h-full max-w-xl justify-between border-0 dark:bg-[rgba(0,0,0,0.4)]"
                 imgAlt={props.imgAlt}
                 imgSrc={props.imgSrc}
 
             >
 
-                <h5 className="text-2xl font-bold text-center tracking-wide text-gray-900 dark:text-white light:text-black">
+                <h5 className="light:text-black text-center text-2xl font-bold tracking-wide text-gray-900 dark:text-white">
                     {props.tittle}
                 </h5>
-                <div className="flex flex-col grow">
-                    <p className="grow text-gray-700 text-center dark:text-gray-100 light:text-gray-800" >
+                <div className="flex grow flex-col">
+                    <p className="light:text-gray-800 grow text-center text-gray-700 dark:text-gray-100" >
                         {props.description}
                     </p>
                     <div className="flex flex-wrap justify-center gap-5 p-5">
@@ -38,17 +38,17 @@ export const ProjetcCard = (props) => {
                     </div>
                 </div>
 
-                <div className="flex flex-col items-center lg:flex-row gap-5 justify-around">
+                <div className="flex flex-col items-center justify-around gap-5 lg:flex-row">
                     {props.linkRepo !== '' ?
                         <ButtonFB ButtonFB color='darkIndigo' href={props.linkRepo}>
                             Repo
-                            <GoFileDirectoryFill className="ml-2 h-5 w-5" />
+                            <GoFileDirectoryFill className="ml-2 size-5" />
                         </ButtonFB>
                         : ''}
                     {props.linkPage !== '' ?
                         <ButtonFB color='darkBlue' href={props.linkPage}>
                             Page
-                            < HiMiniPaperAirplane className="ml-2 h-5 w-5" />
+                            < HiMiniPaperAirplane className="ml-2 size-5" />
                         </ButtonFB>
                         : ''}
 

@@ -1,6 +1,5 @@
 import { ProjetcCard } from "../cards/projects"
 import { Section } from "../ui/section"
-import { HiMiniFolder } from "react-icons/hi2"
 import { FaGitAlt } from "react-icons/fa";
 import { AosAnimate } from "../aosAnimate";
 import {
@@ -25,7 +24,7 @@ export const SectionProjects = () => {
     return (
         <Section id="projects">
 
-            <div className='flex flex-col items-center md:grid md:grid-cols-2 md:grid-auto-rows gap-10'>
+            <div className='flex flex-col items-center gap-10 md:grid md:auto-rows-auto md:grid-cols-2'>
 
                 <AosAnimate>
                     <div className="h-full" data-aos="fade-right" data-aos-easing="ease-in-out" data-aos-anchor-placement="top">
@@ -34,7 +33,7 @@ export const SectionProjects = () => {
                             imgAlt='Ecommerce DevQuest'
                             tittle='Ecommerce DevQuest'
                             linkRepo='https://github.com/Leandro-Sousa-dev/ecommerce-ts'
-                            linkPage=''
+                            linkPage='https://ecommerce-ts-eight.vercel.app/'
                             description='Aplicação em desenvolvimento que irá contar com uma estrutura completa de ponta a ponta, com o Front-end e o back-end feito por min com a revisão e apoio dos mentores do DevQuest.'>
                             <SiReact />
                             <SiTypescript />
